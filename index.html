@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,11 +7,11 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', sans-serif;}
 body{background:#f8f9fa;color:#222;}
-header{background:#111;color:#fff;padding:20px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;}
+header{background:#111;color:#fff;padding:20px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;flex-wrap:wrap;}
 header h1{letter-spacing:1px;} header h1 span{color:#ff3c00;}
 nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500;}
 .hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://picsum.photos/1200/500');background-size:cover;color:#fff;padding:80px 5%;text-align:center;}
-.hero h2{font-size:48px;margin-bottom:10px;}
+.hero h2{font-size:42px;margin-bottom:10px;}
 .hero p{font-size:18px;margin-bottom:20px;}
 .btn{background:#ff3c00;color:#fff;padding:12px 25px;text-decoration:none;border-radius:5px;font-weight:bold;}
 .container{padding:40px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;}
@@ -20,7 +20,8 @@ nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500;}
 .card img{width:100%;height:200px;object-fit:cover;}
 .card-content{padding:20px;}
 .card-content h3{margin-bottom:10px;}
-.card-content p{color:#555;font-size:14px;}
+.card-content p{color:#555;font-size:14px;line-height:1.6;}
+.badge{display:inline-block;background:#ff3c00;color:#fff;font-size:11px;padding:3px 8px;border-radius:3px;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;}
 footer{background:#111;color:#ccc;text-align:center;padding:30px 5%;margin-top:40px;}
 </style>
 </head>
@@ -40,38 +41,23 @@ footer{background:#111;color:#ccc;text-align:center;padding:30px 5%;margin-top:4
 <div class="hero">
 <h2>Welcome to Kayblog</h2>
 <p>Everything Interesting - News, Lifestyle, Gist, Entertainment & More</p>
-<a href="#" class="btn">Read Latest</a>
+<a href="#" class="btn">Explore Now</a>
 </div>
 
 <div class="container">
-<div class="card">
-<img src="https://picsum.photos/400/250?random=1" alt="">
-<div class="card-content">
-<h3>Breaking News Today</h3>
-<p>Stay updated with the latest happenings around the world, right here on Kayblog.</p>
-</div>
-</div>
 
 <div class="card">
-<img src="https://picsum.photos/400/250?random=2" alt="">
+<img src="https://picsum.photos/400/250?random=11" alt="">
 <div class="card-content">
-<h3>Lifestyle & Vibes</h3>
-<p>Fashion, health, and everyday inspiration to keep you fresh and motivated.</p>
+<span class="badge">Entertainment</span>
+<h3>Top 10 Nigerian Songs Trending This Week</h3>
+<p>From Burna Boy to Ayra Starr, here are the hottest tracks dominating the airwaves and TikTok right now in Nigeria.</p>
 </div>
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/400/250?random=3" alt="">
+<img src="https://picsum.photos/400/250?random=12" alt="">
 <div class="card-content">
-<h3>Entertainment Gist</h3>
-<p>Hot celebrity gist, music, movies and trending stories you don't want to miss.</p>
-</div>
-</div>
-</div>
-
-<footer>
-<p>&copy; 2026 Kayblog. All Rights Reserved. | Designed by Kay</p>
-</footer>
-
-</body>
-</html>￼Enter
+<span class="badge">News</span>
+<h3>FG Announces New Student Loan Update for 2026</h3>
+<p>The Federal Government has released a new guideline for the student loan scheme. Here is what every student needs to know and
