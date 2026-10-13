@@ -1,133 +1,77 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kayblog - Beauty, Lifestyle & Entertainment</title>
-<meta name="description" content="Welcome to Kayblog for beauty, fashion, entertainment, lifestyle and useful everyday tips.">
+<title>Kayblog - Everything Interesting</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:#292333;background:#fff}
-header{background:#fff;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;border-bottom:1px solid #eee}
-.logo{font-size:30px;font-weight:bold;color:#7028a0}
-.logo span{color:#d5a52c}
-nav a{color:#333;text-decoration:none;margin:0 8px;font-size:14px}
-.hero{background:linear-gradient(135deg,#7028a0,#32134d);color:white;padding:65px 7%;text-align:center}
-.hero h1{font-size:40px;margin:0 0 15px}
-.hero p{font-size:17px;line-height:1.7;max-width:650px;margin:0 auto 25px}
-.button{display:inline-block;background:#e0b541;color:#261438;padding:13px 24px;text-decoration:none;border-radius:5px;font-weight:bold}
-.container{max-width:1100px;margin:auto;padding:35px 20px}
-h2{color:#7028a0}
-.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:15px}
-.category{background:#f6effa;padding:23px 10px;text-align:center;border-radius:10px;font-weight:bold}
-.articles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
-.card{border:1px solid #eee;border-radius:10px;overflow:hidden;background:#fff}
-.card-top{height:120px;background:linear-gradient(135deg,#7028a0,#e0b541);display:flex;align-items:center;justify-content:center;font-size:42px}
-.card-content{padding:18px}
-.card h3{margin-top:0;color:#7028a0}
-.card p{line-height:1.6;color:#555;font-size:14px}
-.tag{color:#a07812;font-size:12px;font-weight:bold;text-transform:uppercase}
-.adbox{border:2px dashed #c9b7d5;background:#faf7fc;text-align:center;padding:30px;margin:35px 0;color:#776783}
-.about{background:#f8f3fb;padding:28px;border-radius:10px;line-height:1.8}
-footer{background:#29133b;color:#fff;padding:30px 6%;text-align:center;line-height:2}
-footer a{color:#f0cf69;text-decoration:none;margin:0 8px}
-@media(max-width:600px){header{justify-content:center;gap:15px}nav{text-align:center;line-height:2.2}.hero h1{font-size:31px}}
+*{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', sans-serif;}
+body{background:#f8f9fa;color:#222;}
+header{background:#111;color:#fff;padding:20px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;}
+header h1{letter-spacing:1px;} header h1 span{color:#ff3c00;}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500;}
+.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://picsum.photos/1200/500');background-size:cover;color:#fff;padding:80px 5%;text-align:center;}
+.hero h2{font-size:48px;margin-bottom:10px;}
+.hero p{font-size:18px;margin-bottom:20px;}
+.btn{background:#ff3c00;color:#fff;padding:12px 25px;text-decoration:none;border-radius:5px;font-weight:bold;}
+.container{padding:40px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;}
+.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:0.3s;}
+.card:hover{transform:translateY(-5px);}
+.card img{width:100%;height:200px;object-fit:cover;}
+.card-content{padding:20px;}
+.card-content h3{margin-bottom:10px;}
+.card-content p{color:#555;font-size:14px;}
+footer{background:#111;color:#ccc;text-align:center;padding:30px 5%;margin-top:40px;}
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">Kay<span>blog</span></div>
+<h1>Kay<span>blog</span></h1>
 <nav>
-<a href="#home">Home</a>
-<a href="#categories">Categories</a>
-<a href="#articles">Articles</a>
-<a href="#about">About</a>
+<a href="#">Home</a>
+<a href="#">News</a>
+<a href="#">Lifestyle</a>
+<a href="#">Entertainment</a>
+<a href="#">Contact</a>
 </nav>
 </header>
 
-<section class="hero" id="home">
-<h1>Welcome to Kayblog!</h1>
-<p>Your daily dose of beauty, fashion, entertainment, lifestyle inspiration and helpful tips. Discover something new every day!</p>
-<a href="#articles" class="button">Explore Our Blog</a>
-</section>
-
-<section class="container" id="categories">
-<h2>Explore Categories</h2>
-<div class="categories">
-<div class="category">💄 Beauty</div>
-<div class="category">👗 Fashion</div>
-<div class="category">🎬 Entertainment</div>
-<div class="category">🌿 Lifestyle</div>
-<div class="category">💡 Useful Tips</div>
-<div class="category">📱 Technology</div>
+<div class="hero">
+<h2>Welcome to Kayblog</h2>
+<p>Everything Interesting - News, Lifestyle, Gist, Entertainment & More</p>
+<a href="#" class="btn">Read Latest</a>
 </div>
-</section>
 
-<section class="container" id="articles">
-<h2>Latest from Kayblog</h2>
-<p>Discover ideas, inspiration and helpful information.</p>
-
-<div class="articles">
-
-<article class="card">
-<div class="card-top">💄</div>
+<div class="container">
+<div class="card">
+<img src="https://picsum.photos/400/250?random=1" alt="">
 <div class="card-content">
-<span class="tag">Beauty</span>
-<h3>Simple Beauty Habits for Every Day</h3>
-<p>Explore simple skincare and beauty habits that can help you build a routine that works for you.</p>
+<h3>Breaking News Today</h3>
+<p>Stay updated with the latest happenings around the world, right here on Kayblog.</p>
 </div>
-</article>
+</div>
 
-<article class="card">
-<div class="card-top">👗</div>
+<div class="card">
+<img src="https://picsum.photos/400/250?random=2" alt="">
 <div class="card-content">
-<span class="tag">Fashion</span>
-<h3>How to Create a Stylish Outfit</h3>
-<p>Learn how to combine colours, accessories and basic wardrobe pieces to create your own style.</p>
+<h3>Lifestyle & Vibes</h3>
+<p>Fashion, health, and everyday inspiration to keep you fresh and motivated.</p>
 </div>
-</article>
+</div>
 
-<article class="card">
-<div class="card-top">🎬</div>
+<div class="card">
+<img src="https://picsum.photos/400/250?random=3" alt="">
 <div class="card-content">
-<span class="tag">Entertainment</span>
-<h3>Entertainment News and Trends</h3>
-<p>Stay curious about popular entertainment, celebrity updates and trending stories.</p>
+<h3>Entertainment Gist</h3>
+<p>Hot celebrity gist, music, movies and trending stories you don't want to miss.</p>
 </div>
-</article>
-
-<article class="card">
-<div class="card-top">💡</div>
-<div class="card-content">
-<span class="tag">Useful Tips</span>
-<h3>Everyday Tips to Make Life Easier</h3>
-<p>Discover practical ideas for organising your day, saving time and learning useful skills.</p>
 </div>
-</article>
-
 </div>
-
-<div class="adbox">
-<strong>Advertisement Space</strong>
-<p>Advertisements may appear here after an advertising provider approves your website and you add its ad code.</p>
-</div>
-</section>
-
-<section class="container" id="about">
-<div class="about">
-<h2>About Kayblog</h2>
-<p>Welcome to Kayblog, a blog created to share beauty inspiration, fashion ideas, entertainment, lifestyle stories, technology and useful everyday tips.</p>
-<p>Our goal is to make discovering helpful and interesting content enjoyable. Visit again for new articles and inspiration!</p>
-</div>
-</section>
 
 <footer>
-<strong>Kayblog</strong>
-<p>Beauty • Fashion • Entertainment • Lifestyle • Tips</p>
-<p>© 2026 Kayblog. All rights reserved.</p>
-<p>Contact: Add your email address here</p>
+<p>&copy; 2026 Kayblog. All Rights Reserved. | Designed by Kay</p>
 </footer>
 
 </body>
-</html>￼Enter
+</html>
