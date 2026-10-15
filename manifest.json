@@ -5,13 +5,11 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#7c3aed",
-  "description": "Beauty, Lifestyle, Entertainment and Tips - KayBlog Official App",
   "icons": [
     {
       "src": "icon.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }
