@@ -1,19 +1,13 @@
 {
   "name": "KayBlog Official",
   "short_name": "KayBlog",
-  "description": "News, Tech, Lifestyle - KayBlog Official",
   "start_url": "/Kayblog/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#7c3aed",
   "icons": [
     {
-      "src": "https://kayblogofficial.blogspot.com/favicon.ico",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "https://kayblogofficial.blogspot.com/favicon.ico",
+      "src": "icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
